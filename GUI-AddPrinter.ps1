@@ -92,7 +92,6 @@ $btn_Install.Add_Click({
 
 ### Main
 $printName = $listBox_Printers.SelectedItem
-$printLoc = ""
 $printers = Get-Printer -ComputerName $printserver | Select-Object -Property "Location", "Name"
 
 foreach($printer in $printers){
